@@ -1,12 +1,6 @@
-# Lily Safie
-
-Technical Business Analyst | PhD in Computer Science | Product/System Development and Automation
-
 ## About Me
 
-I have a PhD in Computer Science and I enjoy building products/systems that solve operational problems.
-
-LinkedIn summary: Autonomous professional with over 15 years of experience aligning business needs with technical solutions across public and corporate sectors. Expertise in requirements analysis, Agile delivery, and ERP/finance systems, supported by hands-on experience in AI/ML (Python, BERT), software development, and data analysis. Proven track record of delivering end-to-end digital transformation projects, including application development and system integrations.
+I am a technical professional with a PhD in Computer Science and over 15 years of experience delivering software and digital transformation projects across public and corporate sectors. I enjoy building practical systems that solve operational problems, with experience in AI/ML, software development, data analysis, and system integration.
 
 ## Projects
 
