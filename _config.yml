@@ -1,13 +1,13 @@
 title: Lily Safie
 description: Technical Business Analyst | PhD in Computer Science 
-lsi: false
-safe: true
-source: [your repo's top level directory]
-incremental: false
-highlighter: rouge
-gist:
-  noscript: false
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
-theme: jekyll-theme-minimal
+
+source: main
+
+
+remote_theme: poole/hyde
+
+plugins:
+  - jekyll-remote-theme
+
+author:
+  name: Lily Safie
