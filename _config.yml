@@ -3,6 +3,7 @@ description: Technical Business Analyst | PhD in Computer Science
 
 source: main
 
+theme: jekyll-theme-hyde
 
 remote_theme: poole/hyde
 
