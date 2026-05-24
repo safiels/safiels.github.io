@@ -1,3 +1,8 @@
+---
+layout: default
+title: Home
+---
+
 ## About Me
 
 I am a technical professional with a PhD in Computer Science and over 15 years of experience delivering software and digital transformation projects across public and corporate sectors. I enjoy building practical products and systems that solve real-world problems, with experience across multiple organisations and business domains, including ERP and software development, system integration, and applying AI/LLM for automation in data extraction.
