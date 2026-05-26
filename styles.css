@@ -1,0 +1,261 @@
+:root {
+  --bg: #f4efe8;
+  --surface: rgba(255, 255, 255, 0.72);
+  --surface-strong: #ffffff;
+  --border: rgba(62, 39, 35, 0.12);
+  --text: #221b18;
+  --muted: #6d615b;
+  --accent: #885d4d;
+  --accent-soft: #efe2db;
+  --shadow: 0 24px 60px rgba(34, 27, 24, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.85), transparent 32%),
+    linear-gradient(180deg, #f7f1ea 0%, #efe7df 100%);
+}
+
+a {
+  color: inherit;
+}
+
+.site-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(280px, 340px) 1fr;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding: 40px 28px;
+  background: rgba(34, 27, 24, 0.96);
+  color: #f8f4ef;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.profile-block {
+  text-align: center;
+}
+
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 24px;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.16);
+  margin-bottom: 18px;
+}
+
+.profile-block h1,
+.content h2,
+.project-header h3,
+.timeline-item h3,
+.education-list h3 {
+  margin: 0;
+}
+
+.role,
+.location,
+.sidebar-section h2,
+.eyebrow,
+.project-header span,
+.timeline-company,
+.timeline-item span,
+.education-list p {
+  color: var(--muted);
+}
+
+.sidebar .role,
+.sidebar .location,
+.sidebar-section h2 {
+  color: rgba(248, 244, 239, 0.72);
+}
+
+.sidebar-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar-section h2 {
+  margin: 0 0 4px;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.sidebar-section a {
+  text-decoration: none;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  transition:
+    transform 0.18s ease,
+    background-color 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.sidebar-section a:hover,
+.sidebar-section a:focus-visible {
+  transform: translateX(2px);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.content {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.panel {
+  background: var(--surface);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 32px;
+  box-shadow: var(--shadow);
+}
+
+.hero {
+  background:
+    linear-gradient(135deg, rgba(239, 226, 219, 0.95), rgba(255, 255, 255, 0.92)),
+    var(--surface-strong);
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.content h2 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  margin-bottom: 14px;
+}
+
+.content p {
+  margin: 0 0 14px;
+  line-height: 1.7;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.tag-list span {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.project-card,
+.timeline-item,
+.education-list article {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 22px;
+}
+
+.project-card + .project-card,
+.timeline-item + .timeline-item,
+.education-list article + article {
+  margin-top: 16px;
+}
+
+.project-header,
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.project-header {
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.timeline-item {
+  align-items: start;
+}
+
+.timeline-company,
+.timeline-item span,
+.project-header span {
+  font-size: 0.95rem;
+}
+
+.education-list {
+  display: grid;
+  gap: 16px;
+}
+
+#contact a {
+  color: var(--accent);
+  text-decoration-thickness: 2px;
+}
+
+@media (max-width: 960px) {
+  .site-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+    height: auto;
+  }
+
+  .content {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .content,
+  .sidebar {
+    padding: 24px 18px;
+  }
+
+  .panel {
+    padding: 24px;
+    border-radius: 22px;
+  }
+
+  .project-header,
+  .timeline-item {
+    flex-direction: column;
+  }
+}
