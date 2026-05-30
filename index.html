@@ -20,51 +20,65 @@
     <div class="site-shell">
       <aside class="sidebar">
         <div class="profile-block">
-          <img
-            class="profile-photo"
-            src="assets/profile-placeholder.svg"
-            alt="Profile placeholder for Lily Safie"
-          />
-          <h1>Lily Safie</h1>
-          <p class="role">Technical / Business Analyst</p>
+          <a href="index.html" class="profile-home-link" data-view="home">
+            <span class="profile-photo-wrap">
+              <img
+                class="profile-photo"
+                src="assets/profilephoto2.jpg"
+                alt="Lily Safie"
+                draggable="false"
+              />
+            </span>
+            <h1>Lily Safie</h1>
+          </a>
+          <p class="role">Technical / Business Professional</p>
           <p class="location">Hertfordshire, UK</p>
         </div>
 
-        <section class="sidebar-section">
-          <h2>Links</h2>
-          <a href="mailto:safiels@gmail.com">Email</a>
-          <a
-            href="https://uk.linkedin.com/in/lilysafie"
-            target="_blank"
-            rel="noreferrer"
-            >LinkedIn</a
+        <section
+          class="sidebar-section sidebar-section--highlights sidebar-section--prominent"
+        >
+          <h2>Highlights</h2>
+          <a href="#highlight-telekom" data-view="highlight-telekom"
+            >Telekom Malaysia</a
           >
-          <a href="https://github.com/safiels" target="_blank" rel="noreferrer"
-            >GitHub</a
+          <a href="#highlight-phd" data-view="highlight-phd">The PhD Journey</a>
+          <a href="#highlight-rails" data-view="highlight-rails"
+            >Ruby on Rails for Web Application</a
+          >
+          <a href="#highlight-embl" data-view="highlight-embl"
+            >Corporate Systems for Europe&rsquo;s Largest Biomedical Research
+            Institute</a
+          >
+          <a href="#highlight-product" data-view="highlight-product"
+            >Building My Own Product</a
+          >
+          <a href="#highlight-erp-sla" data-view="highlight-erp-sla"
+            >Supporting an ERP System with a Gold-Level SLA</a
+          >
+          <a href="#highlight-finance-discovery" data-view="highlight-finance-discovery"
+            >Discovery Project for Migrating a 20-Year-Old Finance System to
+            SaaS</a
+          >
+          <a href="#highlight-ai-migration" data-view="highlight-ai-migration"
+            >Data Migration with AI-Powered Automation</a
+          >
+          <a href="#highlight-cursor" data-view="highlight-cursor"
+            >Prototype built using Cursor</a
           >
         </section>
 
-        <section class="sidebar-section">
-          <h2>Projects</h2>
-          <a href="#project-cas">CAS Delivery</a>
-          <a href="#project-ai">AI Metadata Extraction</a>
-          <a href="#project-finance">Finance Discovery</a>
-          <a href="#project-marketplace">Sedap Sedap Market</a>
-        </section>
-
-        <section class="sidebar-section">
+        <section class="sidebar-section sidebar-section--prominent">
           <h2>Navigate</h2>
-          <a href="#about">About Me</a>
-          <a href="#experience">Experience</a>
-          <a href="#education">Education</a>
-          <a href="#contact">Contact</a>
+          <a href="#about" data-view="home">About Me</a>
+          <a href="#experience" data-view="home">Experience</a>
         </section>
       </aside>
 
       <main class="content">
+        <div id="view-home" class="content-view">
         <section class="panel hero" id="about">
-          <p class="eyebrow">About Me</p>
-          <h2>Technical business analysis grounded in delivery.</h2>
+          <h2>About Me</h2>
           <p>
             I am a technical professional with a PhD in Computer Science and over
             15 years of experience delivering software and digital transformation
@@ -74,110 +88,211 @@
             including ERP and software development, system integration, and
             applying AI/LLM for automation in data extraction.
           </p>
-
-          <div class="tag-list">
-            <span>Requirements Analysis</span>
-            <span>Agile Delivery</span>
-            <span>ERP / Finance Systems</span>
-            <span>AI Automation</span>
-            <span>Prototyping</span>
-            <span>Systems Integration</span>
-          </div>
-        </section>
-
-        <section class="panel" id="projects">
-          <p class="eyebrow">Selected Work</p>
-          <h2>Projects and delivery highlights</h2>
-
-          <article class="project-card" id="project-cas">
-            <div class="project-header">
-              <h3>Contract Award Service Delivery</h3>
-              <span>Government Commercial Agency</span>
-            </div>
-            <p>
-              Refined high-level requirements into user stories, acceptance
-              criteria, and a delivery-ready backlog for the Contract Award
-              Service within the DOS7 framework.
-            </p>
-          </article>
-
-          <article class="project-card" id="project-ai">
-            <div class="project-header">
-              <h3>AI Metadata Extraction</h3>
-              <span>Vehicle Certification Agency</span>
-            </div>
-            <p>
-              Built Python-based extraction workflows and fine-tuned a BERT model
-              to identify metadata and classify titles from a large regulatory
-              document set.
-            </p>
-          </article>
-
-          <article class="project-card" id="project-finance">
-            <div class="project-header">
-              <h3>Finance Discovery for Parliament</h3>
-              <span>Parliamentary Digital Service</span>
-            </div>
-            <p>
-              Mapped current-state finance processes and produced to-be analysis
-              to support the move from an on-premises finance platform to a SaaS
-              solution.
-            </p>
-          </article>
-
-          <article class="project-card" id="project-marketplace">
-            <div class="project-header">
-              <h3>Sedap Sedap Market</h3>
-              <span>Co-Founder / Product Owner</span>
-            </div>
-            <p>
-              Helped launch an online marketplace from the ground up, covering
-              product direction, feature prioritisation, user-focused learning,
-              and business process design.
-            </p>
-          </article>
+          <p>
+            This is my personal space, so I can speak a bit more freely about who
+            I am and what I enjoy doing.
+          </p>
+          <p>
+            At my core, I'm someone who loves building products. I enjoy the
+            entire process - talking to users to understand what they need,
+            designing systems and products, researching and choosing the right
+            technology stack, and helping build the actual solution through
+            software development.
+          </p>
+          <p>
+            Over the years, I've developed a range of skills that allow me to
+            contribute across different parts of the product journey. For me, the
+            most satisfying thing is building something functional and useful
+            that genuinely helps users.
+          </p>
+          <p>
+            Professionally, I would usually introduce myself as a Business
+            Analyst or Technical Business Analyst, but I see myself as more than
+            that. The reality is that there are very few roles out there that
+            truly combine all the things I genuinely enjoy doing. The closest
+            I've experienced to that was when I built my own product through my
+            own company, where I had the opportunity to be involved across the
+            entire journey from idea to implementation.
+          </p>
+          <p>
+            That said, people I've worked with in the past have often seen that
+            broader side of me and recognised that I can contribute beyond the
+            traditional expectations of a Business Analyst role.
+          </p>
         </section>
 
         <section class="panel" id="experience">
-          <p class="eyebrow">Experience</p>
-          <h2>Recent roles</h2>
+          <h2>Experience</h2>
           <div class="timeline">
             <article class="timeline-item">
-              <div>
-                <h3>Business Analyst</h3>
-                <p class="timeline-company">Government Commercial Agency</p>
+              <div class="timeline-item__header">
+                <div>
+                  <h3>Business Analyst</h3>
+                  <p class="timeline-company">Government Commercial Agency</p>
+                </div>
+                <span>Sep 2025 - Present</span>
               </div>
-              <span>2025 - Present</span>
+              <p class="timeline-summary">
+                Collaborate with cross-functional teams to refine and translate
+                business requirements into actionable deliverables, maintaining a
+                delivery-ready product backlog to support releases for the Contract
+                Award Service (CAS) within the DOS7 framework for the Government
+                Commercial Agency (formerly the Crown Commercial Service).
+              </p>
             </article>
 
             <article class="timeline-item">
-              <div>
-                <h3>Technical Business Analyst</h3>
-                <p class="timeline-company">Vehicle Certification Agency</p>
+              <div class="timeline-item__header">
+                <div>
+                  <h3>Technical Business Analyst</h3>
+                  <p class="timeline-company">Vehicle Certification Agency</p>
+                </div>
+                <span>Nov 2024 - May 2025</span>
               </div>
-              <span>2024 - 2025</span>
+              <p class="timeline-summary">
+                Identified and used an AI language model to automate metadata
+                extraction from regulatory documents, as part of the data and
+                document migration process from legacy systems to a new platform.
+              </p>
             </article>
 
             <article class="timeline-item">
-              <div>
-                <h3>Technical Business Analyst</h3>
-                <p class="timeline-company">Parliamentary Digital Service</p>
+              <div class="timeline-item__header">
+                <div>
+                  <h3>Technical Business Analyst</h3>
+                  <p class="timeline-company">Parliamentary Digital Service</p>
+                </div>
+                <span>May 2024 - Aug 2024</span>
               </div>
-              <span>2023 - 2024</span>
+              <p class="timeline-summary">
+                Worked on Interleaving Digital and Data Project with
+                Parliamentary Digital Service, focusing on hazard management and
+                TruView solutions discovery.
+              </p>
             </article>
 
             <article class="timeline-item">
-              <div>
-                <h3>Application Support Analyst</h3>
-                <p class="timeline-company">University of Bristol</p>
+              <div class="timeline-item__header">
+                <div>
+                  <h3>Technical Business Analyst</h3>
+                  <p class="timeline-company">Parliamentary Digital Service</p>
+                </div>
+                <span>Nov 2023 - Apr 2024</span>
               </div>
-              <span>2022 - 2023</span>
+              <p class="timeline-summary">
+                Worked on Finance Discovery Project with Parliamentary Digital
+                Service to replace on-premises solution (U4BW/Agresso) with
+                SaaS-based finance system.
+              </p>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-item__header">
+                <div>
+                  <h3>Application Support Analyst</h3>
+                  <p class="timeline-company">University of Bristol</p>
+                </div>
+                <span>Aug 2022 - Jul 2023</span>
+              </div>
+              <p class="timeline-summary">
+                Delivered technical and business support for MyERP (U4BW/Agresso)
+                as main finance, procurement and HR system with Gold level SLA.
+              </p>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-item__header">
+                <div>
+                  <h3>Enterprise Analyst</h3>
+                  <p class="timeline-company">Bristol Water</p>
+                </div>
+                <span>Feb 2022 - Jul 2022</span>
+              </div>
+              <p class="timeline-summary">
+                Worked as business analyst focusing on implementing enterprise
+                architecture model.
+              </p>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-item__header">
+                <div>
+                  <h3>Product Owner / Co-Founder</h3>
+                  <p class="timeline-company">Sedap Sedap Market</p>
+                </div>
+                <span>Apr 2018 - Apr 2021</span>
+              </div>
+              <p class="timeline-summary">
+                Collaborated with a co-founder to create an online marketplace from
+                the ground up.
+              </p>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-item__header">
+                <div>
+                  <h3>Business Support Analyst</h3>
+                  <p class="timeline-company">
+                    Network4 Consulting Ltd and Biru Ltd
+                  </p>
+                </div>
+                <span>Mar 2015 - Aug 2015</span>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-item__header">
+                <div>
+                  <h3>Corporate Systems Technical Analyst</h3>
+                  <p class="timeline-company">The Francis Crick Institute</p>
+                </div>
+                <span>Jan 2014 - Feb 2015</span>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-item__header">
+                <div>
+                  <h3>System Data Analyst</h3>
+                  <p class="timeline-company">Imperial College London</p>
+                </div>
+                <span>Mar 2013 - Dec 2013</span>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-item__header">
+                <div>
+                  <h3>Software Developer</h3>
+                  <p class="timeline-company">Brillante Insights</p>
+                </div>
+                <span>Oct 2012 - Jan 2013</span>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-item__header">
+                <div>
+                  <h3>System Analyst, GEMS SAP Project</h3>
+                  <p class="timeline-company">Telekom Malaysia (TM)</p>
+                </div>
+                <span>2006 - 2007</span>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-item__header">
+                <div>
+                  <h3>System Analyst, TM Projects</h3>
+                  <p class="timeline-company">Telekom Malaysia (TM)</p>
+                </div>
+                <span>1999 - 2005</span>
+              </div>
             </article>
           </div>
         </section>
 
         <section class="panel" id="education">
-          <p class="eyebrow">Education</p>
           <h2>Academic background</h2>
           <div class="education-list">
             <article>
@@ -196,8 +311,7 @@
         </section>
 
         <section class="panel" id="contact">
-          <p class="eyebrow">Contact</p>
-          <h2>Public links</h2>
+          <h2>Contact</h2>
           <p>
             Email:
             <a href="mailto:safiels@gmail.com">safiels@gmail.com</a>
@@ -218,7 +332,546 @@
             >
           </p>
         </section>
+        </div>
+
+        <article
+          id="view-highlight-telekom"
+          class="content-view highlight-page"
+          hidden
+        >
+          <p class="highlight-page-home">
+            <a href="index.html" data-view="home">Home</a>
+          </p>
+          <h2>Telekom Malaysia</h2>
+          <p>
+            My first job after graduating was as a Systems Analyst at Telekom
+            Malaysia. I joined right in the middle of the internet boom around the
+            year 2000 - a time when anything with the word &lsquo;internet&rsquo; in
+            it sounded like it was going to change the world overnight (and
+            honestly, most of us believed it).
+          </p>
+          <p>
+            At that time, I was assigned to a new project to build a product called
+            IOffice - short for Internet Office. The idea was to provide small and
+            medium-sized businesses with internet-based services like email,
+            telephone applications that worked through the data network, and a
+            personal directory for storing phone numbers and email addresses,
+            similar to a digital phone book. Back then, this felt like &lsquo;the next
+            big thing&rsquo;.
+          </p>
+          <p>
+            As part of the team, I was trained to maintain the web servers, email
+            servers, application servers, and Active Directory infrastructure.
+            Everything was glued together using Java applications and a Java-based
+            UI for the front end.
+          </p>
+          <p>
+            The systems were running on Sun Microsystems servers. At the time, Sun
+            Microsystems was huge in the enterprise server world before the company
+            eventually disappeared.
+          </p>
+          <p>
+            I also did some Java development work, and I even got the opportunity to
+            travel to Los Angeles for training on maintaining the Sun server
+            ecosystem. For someone early in their career, that was a pretty exciting
+            experience.
+          </p>
+          <p>
+            Eventually, the IOffice project was discontinued because the product
+            never really took off. After that, I worked in various areas within
+            Telekom Malaysia until around 2005, when I joined a large SAP
+            implementation project.
+          </p>
+          <p>
+            The company was replacing many of its legacy systems with SAP, and I
+            became part of the team working on the Materials Management (MM) and
+            Sales &amp; Distribution (SD) modules.
+          </p>
+          <p>
+            I don&rsquo;t know what SAP looks like nowadays, but back then it felt like
+            working with a giant collection of predefined Excel-like forms running
+            inside a proprietary application. Users navigated around the system
+            using transaction codes, and underneath it all were thousands of
+            database tables.
+          </p>
+          <p>
+            SAP came with &lsquo;standard&rsquo; business processes for large organisations,
+            but when those standard processes weren&rsquo;t enough, companies customised
+            the system using ABAP, SAP&rsquo;s proprietary programming language.
+          </p>
+          <p>
+            I worked mainly on the functional side of the implementation. That meant
+            working with business users to define requirements, mapping those
+            requirements into SAP configurations, creating test scripts, performing
+            system testing and UAT sessions, preparing training materials, and
+            training users across the country.
+          </p>
+          <p>
+            That project gave me my first real exposure to large-scale enterprise
+            system implementation.
+          </p>
+        </article>
+
+        <article
+          id="view-highlight-phd"
+          class="content-view highlight-page"
+          hidden
+        >
+          <p class="highlight-page-home">
+            <a href="index.html" data-view="home">Home</a>
+          </p>
+          <h2>The PhD Journey</h2>
+          <p>
+            After spending eight years working at Telekom Malaysia, I made the
+            decision to return to university and pursue a PhD in Computer Science.
+          </p>
+          <p>
+            It turned out to be one of the most challenging journeys of my life.
+            Studying for a doctoral degree is very different from studying for a
+            bachelor&rsquo;s or master&rsquo;s degree. Instead of learning existing knowledge,
+            you are expected to create new knowledge. You need to develop an idea that
+            is both significant and original within your field, and your research is
+            ultimately assessed based on those contributions.
+          </p>
+          <p>
+            During those years, I often questioned my decision. I had stepped away from
+            the industry, given up a stable income, and put my professional career on
+            hold to pursue another academic qualification. There were many moments when
+            I wondered whether it was worth it.
+          </p>
+          <p>Looking back, I am glad that I took that path.</p>
+          <p>
+            The PhD gave me much more than a degree. It taught me how to think more
+            critically, analyse problems more deeply, communicate ideas more clearly, and
+            articulate my thoughts more effectively. These are skills that I continue to
+            value and use to this day.
+          </p>
+          <p>
+            As part of my research, I published a
+            <a
+              href="https://dl.acm.org/doi/10.1145/2000229.2000236"
+              target="_blank"
+              rel="noreferrer"
+              >paper</a
+            >
+            and had the opportunity to present it at a highly respected conference in my
+            field. It was a proud moment and one of the highlights of my doctoral
+            journey.
+          </p>
+        </article>
+
+        <article
+          id="view-highlight-rails"
+          class="content-view highlight-page"
+          hidden
+        >
+          <p class="highlight-page-home">
+            <a href="index.html" data-view="home">Home</a>
+          </p>
+          <h2>Ruby on Rails for Web Application</h2>
+          <p>
+            For this project, I was tasked with building an online subscription and
+            payment system from scratch.
+          </p>
+          <p>
+            It was a community platform where users could register as members, make
+            yearly payments or contributions, and manage their subscription details
+            and account updates.
+          </p>
+          <p>
+            I designed and developed the system using the Ruby on Rails framework.
+            This was actually my first and only time building a system using Ruby.
+          </p>
+          <p>
+            I found Ruby surprisingly easy to learn and enjoyable to work with. One
+            thing that really stood out to me was how flexible the language felt
+            because of its dynamic typing. Compared to some of the enterprise
+            technologies I had worked with before, it made web development feel much
+            faster and more natural.
+          </p>
+        </article>
+
+        <article
+          id="view-highlight-embl"
+          class="content-view highlight-page"
+          hidden
+        >
+          <p class="highlight-page-home">
+            <a href="index.html" data-view="home">Home</a>
+          </p>
+          <h2>
+            Corporate Systems for Europe&rsquo;s Largest Biomedical Research Institute
+          </h2>
+          <p>
+            For this project, I was involved in building corporate systems for the
+            newly established The Francis Crick Institute.
+          </p>
+          <p>
+            The corporate landscape consisted of multiple enterprise systems integrated
+            together to support the organisation&rsquo;s day-to-day operations. This was
+            also my first experience working with Unit4 ERP, which at the time was still
+            widely known as Agresso.
+          </p>
+          <p>
+            To me, it felt like a smaller and lighter version of SAP. The technology
+            stack was still quite traditional, relying heavily on Windows servers,
+            desktop applications, and native Windows tooling.
+          </p>
+          <p>
+            This was also where I learned a lot about Purchase-to-Pay (P2P) processes.
+            Since the research institute relied heavily on scientific suppliers and
+            procurement marketplaces for lab equipment and research materials,
+            purchasing was a huge part of daily operations.
+          </p>
+          <p>
+            We worked in a relatively small team of fewer than 10 people, made up of
+            business users, IT staff, and consultants. Together, we defined the
+            business processes and configured the systems to support them.
+          </p>
+          <p>
+            I was involved throughout the full implementation lifecycle - from
+            requirements gathering and system configuration to testing, UAT, training,
+            and go-live support.
+          </p>
+          <p>
+            One of the bigger responsibilities I had was training around 200
+            researchers to use the P2P module during the go-live phase. Part of the
+            support involved visiting researchers directly in their labs, including some
+            biohazard-controlled environments, which was definitely different from normal
+            office support work. It was actually quite interesting because I got to learn
+            a little about the research they were working on while helping
+            them navigate the system.
+          </p>
+        </article>
+
+        <article
+          id="view-highlight-product"
+          class="content-view highlight-page"
+          hidden
+        >
+          <p class="highlight-page-home">
+            <a href="index.html" data-view="home">Home</a>
+          </p>
+          <h2>Building My Own Product</h2>
+          <p>
+            This was probably the most interesting chapter of my career because it was
+            the first time I built something for my own company instead of for someone
+            else.
+          </p>
+          <p>
+            Together with my co-founder, we built a marketplace for home bakers to sell
+            their baked goods online.
+          </p>
+          <p>
+            Like every marketplace business, the biggest challenge at the start was the
+            classic chicken-and-egg problem: you need sellers to attract buyers, but you
+            also need buyers to convince sellers to join. It&rsquo;s the kind of situation
+            where everyone is politely waiting for someone else to make the first move.
+          </p>
+          <p>
+            I decided to start by focusing on getting sellers onto the platform first.
+          </p>
+          <p>
+            Convincing home bakers to join wasn&rsquo;t easy. Many of them were unsure
+            whether it was worth the effort or the risk. In some cases, I had to
+            personally commit to buying their products upfront just to reduce that risk
+            and give them enough confidence to list on the marketplace.
+          </p>
+          <p>
+            On top of building the system itself, I also had to think about marketing
+            ideas, attracting buyers, onboarding sellers, and figuring out how to make
+            the whole thing work operationally.
+          </p>
+          <p>
+            We spent years putting our own time, money, and energy into trying to make
+            the business work. In the end, the marketplace never became profitable, and
+            we eventually decided to shut it down.
+          </p>
+          <p>I have no regrets about it.</p>
+          <p>
+            It was a completely different kind of experience compared to working on
+            projects inside established organisations. I got to experience the
+            uncertainty, the risk, and the reality of trying to build something from
+            scratch using my own resources - and not many people can honestly say
+            they&rsquo;ve done that.
+          </p>
+          <p>
+            Looking back now, I think the idea was what Y Combinator would call a
+            <strong>tarpit idea</strong> - an idea that sounds promising on the surface but is
+            extremely difficult to turn into a sustainable business.
+          </p>
+        </article>
+
+        <article
+          id="view-highlight-erp-sla"
+          class="content-view highlight-page"
+          hidden
+        >
+          <p class="highlight-page-home">
+            <a href="index.html" data-view="home">Home</a>
+          </p>
+          <h2>Supporting an ERP System with a Gold-Level SLA</h2>
+          <p>
+            Later in my career, I had the opportunity to work as a support analyst for
+            a university ERP system based on Unit4 ERP.
+          </p>
+          <p>
+            It was funny reconnecting with the same system around seven years later
+            because, honestly, it still looked mostly the same. There were more web pages
+            replacing some of the desktop screens, but for heavy financial operations,
+            the desktop client was still the better option.
+          </p>
+          <p>There were two incidents from that role that really tested me.</p>
+          <p>The first involved payroll.</p>
+          <p>
+            A payroll superuser accidentally set a custom &ldquo;U Balance&rdquo; value to zero
+            for all employees instead of for a single employee. The mistake affected
+            nearly 400,000 employee records.
+          </p>
+          <p>
+            Luckily, the system had captured the original values before the update
+            happened, and those values were printed into a text file.
+          </p>
+          <p>
+            At first, the obvious option seemed to be rolling back the system. But
+            because there were so many integrations connected to it - including
+            procurement and external marketplace integrations - rolling everything back
+            would have created even bigger problems.
+          </p>
+          <p>
+            Instead, I decided to write a SQL recovery script to restore all the affected
+            balances directly in the database using the values captured in the text file.
+          </p>
+          <p>
+            The script went through reviews and multiple rounds of testing before we
+            finally deployed it into production.
+          </p>
+          <p>
+            That was probably one of the most stressful production incidents I&rsquo;ve
+            worked on, especially because it involved highly regulated payroll and
+            financial data within an academic institution.
+          </p>
+          <p>
+            The second major challenge was upgrading the ERP platform from version 7.8 to
+            7.10.
+          </p>
+          <p>
+            I had never done that upgrade before, so I was heavily relying on
+            documentation left behind by my predecessor. The upgrade process involved
+            around 50 software packages spread across multiple servers.
+          </p>
+          <p>
+            The first attempt failed because of a mistake I couldn&rsquo;t immediately
+            identify.
+          </p>
+          <p>
+            At one point, I suggested that instead of spending endless hours trying to
+            figure out what went wrong, we should just reset the environment and start
+            over from scratch. Initially, people didn&rsquo;t like that idea, but eventually
+            everyone realised it would probably save more time.
+          </p>
+          <p>
+            The second attempt worked, and I completed the upgrade successfully on my
+            own.
+          </p>
+          <p>
+            That experience taught me that sometimes restarting cleanly is faster and
+            safer than endlessly debugging a broken state.
+          </p>
+        </article>
+
+        <article
+          id="view-highlight-finance-discovery"
+          class="content-view highlight-page"
+          hidden
+        >
+          <p class="highlight-page-home">
+            <a href="index.html" data-view="home">Home</a>
+          </p>
+          <h2>
+            Discovery Project for Migrating a 20-Year-Old Finance System to SaaS
+          </h2>
+          <p>This was my first discovery project.</p>
+          <p>
+            The organisation was using an old on-premise Unit4 ERP finance system, and
+            the goal was to evaluate whether moving to a SaaS-based solution made sense.
+          </p>
+          <p>
+            I spent a lot of time interviewing users, learning how the business processes
+            worked, understanding the issues they faced with the current setup, and
+            researching what newer SaaS ERP platforms could offer.
+          </p>
+          <p>
+            What made the project interesting was that the deeper I looked, the more I
+            realised the problems were not really caused by the system itself.
+          </p>
+          <p>
+            The bigger issues were around poorly designed account structures, inconsistent
+            business processes, too many manual workarounds, and a lack of trust in the
+            data.
+          </p>
+          <p>
+            Because the underlying data wasn&rsquo;t reliable, people ended up creating
+            additional manual processes outside the system just to produce accurate
+            financial reports - which almost defeated the purpose of having a finance
+            system in the first place.
+          </p>
+          <p>
+            A lot of stakeholders blamed the &lsquo;clunky&rsquo; old ERP system, but during
+            discussions I kept reminding them that even the most modern and expensive
+            SaaS platform would not magically fix the problems if the same poor processes
+            and bad data structures were carried over.
+          </p>
+        </article>
+
+        <article
+          id="view-highlight-ai-migration"
+          class="content-view highlight-page"
+          hidden
+        >
+          <p class="highlight-page-home">
+            <a href="index.html" data-view="home">Home</a>
+          </p>
+          <h2>Data Migration with AI-Powered Automation</h2>
+          <p>
+            One of the most interesting projects I worked on involved building a new
+            regulatory library using Microsoft Power Platform. The goal was to replace two
+            long-running legacy systems that together stored nearly 30,000 regulatory
+            documents and their associated processes.
+          </p>
+          <p>
+            What made this project particularly fascinating was that the legacy systems
+            were not actually <em>broken</em>. They had been serving the business reliably for
+            years. The real challenge was sustainability - the underlying technologies were
+            aging, and there was growing concern that the platforms themselves would
+            eventually become difficult to maintain or support.
+          </p>
+          <p>
+            My responsibility in the project was leading the migration of documents and
+            metadata into the new platform.
+          </p>
+          <p>
+            Very early in the migration process, I encountered an unusual problem. One of
+            the legacy systems did not store metadata in a structured database at all.
+            Instead, metadata existed inside Word documents that acted like manually
+            maintained index pages. These pages contained descriptive text and hyperlinks
+            pointing to the actual regulatory documents. Over time, these Word documents
+            had been converted into internal web pages accessible behind a login,
+            effectively becoming a fully functioning document library without a
+            traditional database underneath.
+          </p>
+          <p>
+            It was one of those moments where you realise how creative older systems could
+            be. In today&rsquo;s world of structured databases and APIs, it almost felt
+            unbelievable that such a system had worked successfully for so long.
+          </p>
+          <p>
+            Because there was no structured metadata source available, the closest usable
+            information came from the document filenames themselves. The filenames were
+            not perfectly standardised, but they contained enough patterns to work with.
+          </p>
+          <p>
+            To solve this, I developed a Python automation script that used NLP techniques
+            and regex-based extraction to identify and parse metadata from the filenames.
+            The extracted data was then organised into Excel files for manual validation
+            before being ingested into the new database alongside the regulatory documents
+            themselves.
+          </p>
+          <p>
+            The second legacy system presented a different challenge. This system did
+            have a database containing metadata for PDF documents, which made field
+            mapping into the new platform more straightforward. However, one critical piece
+            of metadata was missing: document titles.
+          </p>
+          <p>
+            Without document titles, navigating and locating documents in the new platform
+            would have been much more difficult. To address this, I experimented with
+            AI-based extraction using a BERT model. I trained the model to identify
+            document titles from the first page of PDFs across multiple document formats
+            and layouts. Using around 200 labelled samples, I iteratively trained and
+            evaluated the model over several rounds until it achieved results that were
+            accurate enough for practical use. A simplified version of my code for training
+            the BERT model and using the fine-tuned model to extract titles from PDF
+            documents
+            <a
+              href="https://github.com/safiels/pdf-title-extractor"
+              target="_blank"
+              rel="noreferrer"
+              >is available on GitHub</a
+            >.
+          </p>
+          <p>
+            The model was not perfect, and AI rarely guarantees 100% accuracy in cases like
+            this. However, it significantly reduced the amount of manual effort required
+            and made the migration achievable within the available timeframe. More
+            importantly, it enabled the new platform to retain meaningful search
+            capabilities for thousands of migrated regulatory documents.
+          </p>
+          <p>
+            The project also gave me one of my first real opportunities to apply AI and LLM
+            technologies to solve an actual business problem. Beyond simply using
+            pre-trained models, I had the chance to fine-tune a model and experience
+            firsthand how machine learning behaves in a real-world environment. It was a
+            valuable experience that moved AI from being something theoretical into
+            something practical and impactful.
+          </p>
+        </article>
+
+        <article
+          id="view-highlight-cursor"
+          class="content-view highlight-page"
+          hidden
+        >
+          <p class="highlight-page-home">
+            <a href="index.html" data-view="home">Home</a>
+          </p>
+          <h2>Prototype built using Cursor</h2>
+          <p>
+            Prototype building with Cursor started as a side initiative alongside a project
+            focused on enhancing existing systems with new features and functionality.
+            Although my primary responsibility was not to build prototypes, I quickly
+            realised they could play an important role in improving communication and
+            requirement gathering.
+          </p>
+          <p>
+            My role was mainly centred around refining requirements and translating them
+            into a backlog of JIRA tickets for the development team. Shortly after joining
+            the project, I recognised that interactive prototypes would make the process
+            significantly more effective. They allowed me to align with business
+            stakeholders on two key aspects early on: how the screens should look and how
+            the user journey and behaviours were expected to flow.
+          </p>
+          <p>
+            Since I already had a subscription to Cursor, which I use for personal software
+            projects, I decided to experiment with building prototypes myself. Leveraging
+            my previous software development experience, I was able to articulate
+            requirements clearly and guide the AI effectively, which made the process
+            surprisingly fast. A few years ago, producing the same level of prototype would
+            likely have taken considerably more time and coordination.
+          </p>
+          <p>
+            I built the prototypes using Cursor and deployed the pages on Cloudflare for
+            easy access. Interestingly, I later discovered that there was already a
+            prototype kit available within the client organisation, although I had not been
+            aware of it initially. After learning about it, I found that my approach using
+            Cursor and Cloudflare was both quicker and easier to work with, while also
+            making the prototypes more accessible for stakeholders and developers to review.
+          </p>
+          <p>
+            The prototypes became a valuable communication tool. They helped bridge the gap
+            between business expectations and technical implementation, making conversations
+            with both stakeholders and developers much clearer and more productive.
+          </p>
+          <p>
+            One of the key takeaways from this experience was recognising how effectively AI
+            tools can accelerate day-to-day work when combined with strong domain knowledge
+            and technical understanding. Rather than replacing expertise, tools like Cursor
+            amplified my ability to communicate ideas quickly, validate requirements earlier,
+            and move from concepts to tangible outcomes in a fraction of the time.
+          </p>
+        </article>
       </main>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
